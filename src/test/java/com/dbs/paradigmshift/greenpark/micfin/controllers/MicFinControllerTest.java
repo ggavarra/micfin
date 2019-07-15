@@ -10,6 +10,6 @@ public class MicFinControllerTest {
 
     @Test
     public void test1(){
-        Assert.assertNotEquals("1","2");
+        Assert.assertEquals("1","2");
     }
 }
