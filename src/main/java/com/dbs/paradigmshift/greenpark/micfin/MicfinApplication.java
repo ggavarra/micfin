@@ -8,6 +8,7 @@ public class MicfinApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MicfinApplication.class, args);
+		System.out.println("Hello - Test");
 
 	}
 
