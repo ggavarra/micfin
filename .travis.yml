@@ -10,5 +10,7 @@ jdk:
 #script: mvn package -DskipTests
 services:
   - docker
-after_success:
-- bin/docker_push.sh
+
+deploy:
+  provider: script
+  script: bash deploy.sh
