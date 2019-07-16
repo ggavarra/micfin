@@ -12,7 +12,7 @@ sudo chmod +x /usr/bin/ecs-deploy
 # eval $(aws ecr get-login --region ap-southeast-1)
 
 # Use this for Docker Hub
-docker login --username $DOCKER_HUB_USER --password $DOCKER_HUB_PSW $AWS_ECR_URL
+#docker login --username $DOCKER_HUB_USER --password $DOCKER_HUB_PSW
 
 docker build -t ggavarra/ecs-auto-deploy .
 docker tag ggavarra/ecs-auto-deploy:latest $IMAGE_REPO_URL:latest
