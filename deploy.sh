@@ -9,7 +9,7 @@ curl https://raw.githubusercontent.com/silinternational/ecs-deploy/master/ecs-de
 sudo chmod +x /usr/bin/ecs-deploy
 
 # Use this for AWS ECR
-eval $(aws ecr get-login --region ap-southeast-1)
+eval $(	aws ecr get-login --no-include-email --region ap-southeast-1)
 #eval $(aws ecr get-login | sed 's|https://||')
 
 # Use this for Docker Hub
