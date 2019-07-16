@@ -8,3 +8,7 @@ jdk:
   - oraclejdk8
 
 #script: mvn package -DskipTests
+services:
+  - docker
+after_success:
+- bin/docker_push.sh
