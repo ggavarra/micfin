@@ -1,14 +1,10 @@
-package com.dbs.paradigmshift.greenpark.micfin.controllers;
+package com.dbsPShift.greenpark.micfin.unit.controllers;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.slf4j.SLF4JLogger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * Created by gayathrig on 15/07/2019.

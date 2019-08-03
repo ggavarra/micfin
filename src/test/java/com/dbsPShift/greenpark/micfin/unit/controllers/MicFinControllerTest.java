@@ -1,4 +1,4 @@
-package com.dbs.paradigmshift.greenpark.micfin.controllers;
+package com.dbsPShift.greenpark.micfin.unit.controllers;
 
 import org.junit.Assert;
 import org.junit.Test;

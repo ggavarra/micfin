@@ -1,11 +1,13 @@
-package com.dbs.paradigmshift.greenpark.micfin;
+package com.dbsPShift.greenpark.micfin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
+//import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
-@EnableSwagger2
+//@EnableSwagger2
+@EnableMongoRepositories
 //Swagger UI will be available at http://localhost:<portnumber>/swagger-ui.html
 public class MicfinApplication {
 
