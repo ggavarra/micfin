@@ -1,4 +1,4 @@
-package com.dbsPShift.greenpark.micfin.beans;
+package com.dbspshift.greenpark.micfin.beans;
 
 
 import org.springframework.data.annotation.Id;
@@ -9,13 +9,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * Created by gayathrig on 24/07/2019.
  */
 
-@Document
+@Document (value = "MFI")
 public class MFI {
 
     @Id
     private String id;
     private String name;
     private String fullName;
+    private Address address;
 
     public MFI(String name, String fullName) {
         this.name = name;
@@ -44,5 +45,23 @@ public class MFI {
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "MFI{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", fullName='" + fullName + '\'' +
+                ", address=" + address +
+                '}';
     }
 }

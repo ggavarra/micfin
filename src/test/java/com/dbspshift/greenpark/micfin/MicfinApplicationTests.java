@@ -1,4 +1,4 @@
-package com.dbsPShift.greenpark.micfin;
+package com.dbspshift.greenpark.micfin;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

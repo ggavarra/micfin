@@ -1,6 +1,6 @@
-package com.dbsPShift.greenpark.micfin.repository;
+package com.dbspshift.greenpark.micfin.integration.repository;
 
-import com.dbsPShift.greenpark.micfin.beans.MFI;
+import com.dbspshift.greenpark.micfin.beans.MFI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 

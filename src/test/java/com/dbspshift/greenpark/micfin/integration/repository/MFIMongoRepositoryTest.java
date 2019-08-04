@@ -1,8 +1,8 @@
-package com.dbsPShift.greenpark.micfin.repository;
+package com.dbspshift.greenpark.micfin.integration.repository;
 
-import com.dbsPShift.greenpark.micfin.beans.MFI;
-import org.junit.Assert;
+import com.dbspshift.greenpark.micfin.beans.MFI;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +19,7 @@ import static org.junit.Assert.*;
 
 @DataMongoTest
 @ExtendWith(SpringExtension.class)
+@Disabled
 class MFIMongoRepositoryTest {
 
     @Autowired
@@ -30,6 +31,7 @@ class MFIMongoRepositoryTest {
     }
 
     @Test
+    @Disabled
     void saveMFI() {
         MFI mfi = new MFI("Grameen Bank", "Grameen Bank - Bangladesh");
         repository.save(mfi);
@@ -37,6 +39,7 @@ class MFIMongoRepositoryTest {
     }
 
     @Test
+    @Disabled
     void findByNameStartingWith() {
         List<MFI> result = repository.findByNameStartingWith("Saadhana");
         assertNull(result);
