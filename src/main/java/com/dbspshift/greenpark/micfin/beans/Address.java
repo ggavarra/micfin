@@ -14,6 +14,9 @@ public class Address {
     private String country;
     private String pinCode;
 
+    public Address() {
+    }
+
     public String getUnitNo() {
         return unitNo;
     }

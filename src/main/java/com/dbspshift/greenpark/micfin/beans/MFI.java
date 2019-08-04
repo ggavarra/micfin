@@ -14,9 +14,13 @@ public class MFI {
 
     @Id
     private String id;
+    private String nationalSecurityNumber;
     private String name;
     private String fullName;
     private Address address;
+
+    public MFI() {
+    }
 
     public MFI(String name, String fullName) {
         this.name = name;
@@ -55,10 +59,19 @@ public class MFI {
         this.address = address;
     }
 
+    public String getNationalSecurityNumber() {
+        return nationalSecurityNumber;
+    }
+
+    public void setNationalSecurityNumber(String nationalSecurityNumber) {
+        this.nationalSecurityNumber = nationalSecurityNumber;
+    }
+
     @Override
     public String toString() {
         return "MFI{" +
                 "id='" + id + '\'' +
+                ", nationalSecurityNumber='" + nationalSecurityNumber + '\'' +
                 ", name='" + name + '\'' +
                 ", fullName='" + fullName + '\'' +
                 ", address=" + address +

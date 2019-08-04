@@ -2,7 +2,7 @@ package com.dbspshift.greenpark.micfin.integration.services;
 
 import com.dbspshift.greenpark.micfin.beans.MFI;
 import com.dbspshift.greenpark.micfin.exceptions.MFINotFoundException;
-import com.dbspshift.greenpark.micfin.integration.repository.MFIRepository;
+import com.dbspshift.greenpark.micfin.repository.MFIRepository;
 import com.dbspshift.greenpark.micfin.services.MFIService;
 import com.dbspshift.greenpark.micfin.services.MFIServiceImpl;
 import org.junit.Assert;
@@ -16,7 +16,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.NoSuchElementException;
 import java.util.Optional;
 
 @RunWith(SpringRunner.class)

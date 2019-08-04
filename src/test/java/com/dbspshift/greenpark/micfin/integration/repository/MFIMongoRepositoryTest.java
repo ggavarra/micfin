@@ -1,6 +1,7 @@
 package com.dbspshift.greenpark.micfin.integration.repository;
 
 import com.dbspshift.greenpark.micfin.beans.MFI;
+import com.dbspshift.greenpark.micfin.repository.MFIRepository;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
